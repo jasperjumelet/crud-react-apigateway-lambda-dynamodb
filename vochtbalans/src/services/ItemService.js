@@ -26,8 +26,8 @@ const removeAll = () => {
 };
 
 // also still needs implementing in the apigateway and lambda
-const findByDate = (date) => {
-  return http.get(`/items?date=${date}`);
+const findById = (id) => {
+  return http.get(`/items?id=${id}`);
 };
 
 const ItemService = {
@@ -37,7 +37,7 @@ const ItemService = {
   update,
   remove,
   removeAll,
-  findByDate
+  findById
 };
 
 export default ItemService;
